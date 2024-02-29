@@ -130,4 +130,8 @@
 		cursor: pointer;
 		font-size: 18px;
 	}
-	/*Fin de Menù lateral*/
+	/*Fin de Menù lateral*/ 
+	.sau{
+		padding:50px 0;
+		background: #52575D;
+	}
