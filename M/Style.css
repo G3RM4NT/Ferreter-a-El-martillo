@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Roboto&display=swap');
 	*{
 		margin: 0;
 		padding: 0;
@@ -6,7 +6,7 @@
 		font-family: 'Montserrat Alternates', sans-serif;
 	}
 	body{
-		background: url(../IMG/FerreteriaFondo.png);
+		background: url(../V/IMG/FerreteriaFondo.png);
 		background-size: 100vw 100vh;
 		background-repeat: no-repeat;
 	}
@@ -30,7 +30,7 @@
 		max-width: 1200px;
 		margin: auto;
 	}
-	.container .btn-menu, .logo{
+	.container .btn-menu{
 		float: left;
 		line-height:100px;
 	}
@@ -41,9 +41,19 @@
 	}
 	.logo h1{
 		color: #fff;
-		font-weight: 400;
-		font-size: 22px;
-		margin-left: 10px;
+		font-weight: 900;
+		font-size: 26px;
+		font-family: "Merriweather", serif;
+		float: right;
+		line-height:100px;
+		letter-spacing:0.1cap;
+		text-shadow: 0 0px 10px, 0 0 2px #ffffff, 0 0 0.2px #d5ceda, 0 0 0.2px #ffffff,
+		0 8px 3px #333;
+	}
+
+	img
+	{
+		margin: 8px;
 	}
 	.container .menu{
 		float: right;
@@ -69,7 +79,8 @@
 	/*Menù lateral*/
 	#btn-menu{
 		display: none;
-	}
+		}
+
 	.container-menu{
 		position: absolute;
 		background: rgba(0,0,0,0.5);
