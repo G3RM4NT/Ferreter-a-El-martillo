@@ -18,6 +18,17 @@
 		z-index: -1;
 		top: 0;left: 0;
 	}
+	.capa h1{
+		font-family: 'Montserrat Alternates', sans-serif;
+		font-weight: bold;
+		font-size: 4em;
+		text-transform: uppercase;
+		text-align: center;
+		transform: translateY(45vh);
+		color: #ffde59c9;
+		text-shadow: 0 0px 10px, 0 0 2px #fffb00, 0 0 0.3px #fffb00, 0 0 0.3px #fffb00,
+		0 8px 3px #333;
+	}
 	/*Estilos para el encabezado*/
 	.header{
 		width: 100%;
