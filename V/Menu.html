@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<title>Menú</title>
+	<link rel="stylesheet" href="../M/CSS-Menú.css" type="text/css">
+	<link rel="shortcut icon" href="../V/IMG/FerreteriaLogo.png" type="image/x-icon">
 </head>
 <body>
-    
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu"><img src="IMG/FerreteriaLogo.png" width="80px"></label>
+		</div>
+			<div class="logo">
+				<h1>Ferretería Martillazo.</h1>
+			</div>
+		</div>
+        <div>
+            <ul>
+                <li class="submenu">
+                    <img src="./IMG/car.svg" id="img-carrito" alt="">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Imagen
+                                    </th>
+                                    <th>
+                                        Nombre
+                                    </th>
+                                    <th>
+                                        Precio
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+	</header>
+	<div class="capa"></div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="./Index.html">Inicio</a>
+			<a href="../V/About-us.html">Sobre Nosotros</a>
+			<a href="#">Reserva de Herramientas</a>
+		</nav>
+		<label for="btn-menu">✕</label>
+	</div>
+</div>
 </body>
 </html>
