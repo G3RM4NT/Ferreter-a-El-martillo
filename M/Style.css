@@ -2,7 +2,6 @@
 	*{
 		margin: 0;
 		padding: 0;
-		box-sizing: border-box;
 		font-family: 'Montserrat Alternates', sans-serif;
 	}
 	body{
@@ -17,6 +16,17 @@
 		background: rgba(0,0,0,0.6);
 		z-index: -1;
 		top: 0;left: 0;
+	}
+	.capa h1{
+		font-family: 'Montserrat Alternates', sans-serif;
+		font-weight: bold;
+		font-size: 4em;
+		text-transform: uppercase;
+		text-align: center;
+		transform: translateY(45vh);
+		color: #ffde59c9;
+		text-shadow: 0 0px 10px, 0 0 2px #fffb00, 0 0 0.3px #fffb00, 0 0 0.3px #fffb00,
+		0 8px 3px #333;
 	}
 	/*Estilos para el encabezado*/
 	.header{
@@ -119,15 +129,15 @@
 		transition: all 400ms ease;
 	}
 	.cont-menu nav a:hover{
-		border-left: 5px solid #c7c7c7;
+		border-left: 5px solid #ffde59;
 		background: #1f1f1f;
 	}
 	.cont-menu label{
 		position: absolute;
 		right: 5px;
 		top: 10px;
-		color: #fff;
+		color: #ffde59;
 		cursor: pointer;
-		font-size: 18px;
+		font-size: 25px;
 	}
 	/*Fin de Menù lateral*/
