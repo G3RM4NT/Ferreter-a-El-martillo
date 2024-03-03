@@ -57,6 +57,11 @@ body {
 	text-shadow: 0 0px 10px, 0 0 2px #ffffff, 0 0 0.2px #d5ceda, 0 0 0.2px #ffffff,
 		0 8px 3px #333;
 }
+.logo{
+	display: flex;
+	padding-left: 400px;
+	padding-top: 5px;
+}
 
 /*Menù lateral*/
 #btn-menu {
@@ -156,7 +161,7 @@ td {
 }
 
 #borrar {
-	background-color: #111111;
+	background-color: #181818;
 	border-radius: 50%;
 	padding: 5px 10px;
 	text-decoration: none;
@@ -164,6 +169,40 @@ td {
 	font-weight: 800;
 	cursor: pointer;
 }
+
+.submenu-2{
+	position: fixed;
+	float: right;
+	padding-top: 40px;
+	padding-left: 24px;
+
+
+}
+
+.submenu-2 #carrito {
+	display: none;
+}
+
+.submenu-2:hover #carrito {
+	display: block;
+	position: relative;
+	right: 0;
+	z-index: 1;
+	top: 100%;
+	background-color: #4e4e5076;
+	padding: 20px;
+	min-width: 250px;
+}
+
+table {
+	width: 100%;
+}
+
+th,
+td {
+	color: #ffffff;
+}
+
 
 .contenido-header {
 	display: flex;
@@ -258,6 +297,17 @@ td {
 	color: white;
 	border-radius: 5px;
 	font-size: 15px;
+
+}
+
+.btn-3{
+	display: inline-block;
+	padding: 7px 10px;
+	background-color: black;
+	color: white;
+	border-radius: 1px;
+	font-size: 15px;
+	width: 100px;
 
 }
 
