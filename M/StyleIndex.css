@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Roboto&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
 .container .btn-menu{
     float: left;
     line-height:100px;
@@ -10,21 +15,57 @@
     font-size: 25px;
     cursor: pointer;
 }
+.logo h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 26px;
+    font-family: "Merriweather", serif;
+    float: right;
+    line-height:100px;
+    letter-spacing:0.1cap;
+    text-shadow: 0 0px 10px, 0 0 2px #ffffff, 0 0 0.2px #d5ceda, 0 0 0.2px #ffffff,
+    0 8px 3px #333;
+}
 
-/*barra lateral*/
+img
+{
+    margin: 8px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
 #btn-menu{
     display: none;
     }
 
 .container-menu{
     position: absolute;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100vh;
-    top: 0;left: 0;
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100%;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
 }
 #btn-menu:checked ~ .container-menu{
     opacity: 1;
@@ -52,12 +93,13 @@
     color: #c7c7c7;
     border-left: 5px solid transparent;
     transition: all 400ms ease;
+    z-index: 999999;
 }
-.cont-menu nav a:hover{
+.container-menu nav a:hover{
     border-left: 5px solid #ffde59;
     background: #1f1f1f;
 }
-.cont-menu label{
+.container-menu label{
     position: absolute;
     right: 5px;
     top: 10px;
@@ -77,7 +119,7 @@
 .container{
     width: 90%;
     max-width: 1200px;
-    margin: auto;
+    margin: auto;                                                                                                          
 }
 .container .btn-menu{
     float: left;
