@@ -111,11 +111,11 @@ body {
 	border-left: 5px solid transparent;
 	transition: all 400ms ease;
 }
-.cont-menu nav a:hover{
+.container-menu nav a:hover{
 	border-left: 5px solid #ffde59;
 	background: #1f1f1f;
 }
-.cont-menu label{
+.container-menu label{
 	position: absolute;
 	right: 5px;
 	top: 10px;
