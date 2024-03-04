@@ -103,7 +103,7 @@ body {
 	transform: translateY(15%);
 }
 
-.cont-menu nav a {
+.cont-menu nav a{
 	display: block;
 	text-decoration: none;
 	padding: 20px;
@@ -111,19 +111,17 @@ body {
 	border-left: 5px solid transparent;
 	transition: all 400ms ease;
 }
-
-.cont-menu nav a:hover {
+.cont-menu nav a:hover{
 	border-left: 5px solid #ffde59;
 	background: #1f1f1f;
 }
-
-.cont-menu label {
+.cont-menu label{
 	position: absolute;
-		right: 5px;
-		top: 10px;
-		color: #ffde59;
-		cursor: pointer;
-		font-size: 25px;
+	right: 5px;
+	top: 10px;
+	color: #ffde59;
+	cursor: pointer;
+	font-size: 25px;
 }
 
 /*Fin de Menù lateral*/
