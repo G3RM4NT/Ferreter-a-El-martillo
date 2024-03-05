@@ -10,129 +10,11 @@
     padding: 0;
     color: #eee;
 }
-.header{
-    top: 0;left: 0;
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.container{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    position: absolute;
-}
-
-.container .btn-menu{
-    float: left;
-    line-height:100px;
-}
-
-.container .btn-menu label{
-    color: #fff;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.logo h1{
-    color: #fff;
-    font-weight: 900;
-    font-size: 26px;
-    font-family: "Merriweather", serif;
-    float: right;
-    line-height:100px;
-    letter-spacing:0.1cap;
-    text-shadow: 0 0px 10px, 0 0 2px #ffffff, 0 0 0.2px #d5ceda, 0 0 0.2px #ffffff,
-    0 8px 3px #333;
-}
-
-.container .menu{
-    float: right;
-    line-height: 100px;
-}
-
-.container .menu a{
-    display: inline-block;
-    padding: 15px;
-    line-height: normal;
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent;
-    font-size: 15px;
-    margin-right: 5px;
-}
-
-.container .menu a:hover{
-    border-bottom: 2px solid #c7c7c7;
-    padding-bottom: 5px;
-}
-
-/*Menù lateral*/
-#btn-menu{
-    display: none;
-    }
-
-    .container-menu{
-		position: relative;
-		background: rgba(0,0,0,0.5);
-		width: 100%;
-		height: 100%;
-		top: 0;left: 0;
-		transition: all 500ms ease;
-		opacity: 0;
-		visibility: hidden;
-	}
-
-    #btn-menu:checked ~ .container-menu{
-		opacity: 1;
-		visibility: visible;
-	}
-
-    .cont-menu{
-		width: 100%;
-		max-width: 250px;
-		background: #1c1c1c;
-		height: 100vh;
-		position: absolute;
-		transition: all 500ms ease;
-		transform: translateX(-100%);
-	}
-
-    #btn-menu:checked ~ .container-menu .cont-menu{
-		transform: translateX(0%);
-	}
-	.cont-menu nav{
-		transform: translateY(15%);
-	}
-
-    .cont-menu nav a{
-		display: block;
-		text-decoration: none;
-		padding: 20px;
-		color: #c7c7c7;
-		border-left: 5px solid transparent;
-		transition: all 400ms ease;
-	}
-
-    .container-menu nav a:hover{
-		border-left: 5px solid #ffde59;
-		background: #1f1f1f;
-	}
-	.container-menu label{
-		position: absolute;
-		right: 5px;
-		top: 10px;
-		color: #ffde59;
-		cursor: pointer;
-		font-size: 25px;
-	}
-/*Fin del menú lateral*/
 
 /* css slider */
 .slider{
     height: 100vh;
-    margin-top: -50px;
-    position: absolute;
+    position: relative;
 }
 .slider .list .item{
     position: absolute;
@@ -161,7 +43,7 @@
     position: absolute;
     left: 10%;
     top: 20%;
-    width: 500px;
+    width: auto;
     max-width: 80%;
     z-index: 1;
 }
