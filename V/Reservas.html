@@ -5,6 +5,7 @@
 	<title>Ferretería "El Martillazo" - Reservas</title>
 	<link rel="stylesheet" href="../M/Style.css" type="text/css">
 	<link rel="shortcut icon" href="../V/IMG/FerreteriaLogo.png" type="image/x-icon">
+	<link href="../M/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">}
 </head>
 <body>
 	<header class="header">
@@ -32,9 +33,60 @@
 		<label for="btn-menu">✕</label>
 	</div>
 </div>
-
-<!-- completar información y arreglar la imagen y ponerla en la capa, no de fondo de toda la page -->
-<div class="info"> 
+<div class="container-info"> 
+	<hr style="background-color: #ffde59; border-color: #000000;" size="10px" width="100%">
+	<h3>Complete el formulario para reservar una herramienta</h3>
+	<div class="container pb-4">
+		<form>
+			<div class="row mb-3">
+			  <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+			  <div class="col-sm-10">
+				<input type="text" class="form-control" id="nombre" style="border-color: #ffde59; ">
+			  </div>
+			</div>
+			<div class="row mb-3">
+			  <label for="email" class="col-sm-2 col-form-label">Correo:</label>
+			  <div class="col-sm-10">
+				<input type="email" class="form-control" id="email" style="border-color: #ffde59;">
+			  </div>
+			</div>
+			<fieldset class="row mb-3">
+			  <legend class="col-form-label col-sm-2 pt-0">Producto</legend>
+			  <div class="col-sm-10">
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+				  <label class="form-check-label" for="gridRadios1">
+					First radio
+				  </label>
+				</div>
+				<div class="form-check">
+				  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+				  <label class="form-check-label" for="gridRadios2">
+					Second radio
+				  </label>
+				</div>
+				<div class="form-check disabled">
+				  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+				  <label class="form-check-label" for="gridRadios3">
+					Third disabled radio
+				  </label>
+				</div>
+			  </div>
+			</fieldset>
+			<div class="row mb-3">
+			  <div class="col-sm-10 offset-sm-2">
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" id="gridCheck1">
+				  <label class="form-check-label" for="gridCheck1">
+					Example checkbox
+				  </label>
+				</div>
+			  </div>
+			</div>
+			<button type="submit" class="btn btn-warning">Reservar</button>
+		  </form>
+	</div>
 </div>
+<!-- <script src="../M/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>
