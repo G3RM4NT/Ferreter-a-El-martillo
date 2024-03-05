@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Roboto&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+<<<<<<< HEAD
 .container{
     width: 90%;
     max-width: 1200px;
@@ -205,6 +206,21 @@ header .menu{
 .slider{
     height: 100vh;
     margin-top: -50px;
+=======
+
+/*Menú */
+
+*{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    color: #eee;
+}
+
+/* css slider */
+.slider{
+    height: 100vh;
+>>>>>>> d773f0183c61d1c43c7f7d4211bd8a9a1350b471
     position: relative;
 }
 .slider .list .item{
@@ -234,7 +250,11 @@ header .menu{
     position: absolute;
     left: 10%;
     top: 20%;
+<<<<<<< HEAD
     width: 500px;
+=======
+    width: auto;
+>>>>>>> d773f0183c61d1c43c7f7d4211bd8a9a1350b471
     max-width: 80%;
     z-index: 1;
 }
@@ -278,19 +298,33 @@ header .menu{
     z-index: 100;
 }
 .arrows button{
+<<<<<<< HEAD
     background-color: #eee5;
+=======
+    background-color: #ffffffab;
+    color: black;
+>>>>>>> d773f0183c61d1c43c7f7d4211bd8a9a1350b471
     border: none;
     font-family: monospace;
     width: 40px;
     height: 40px;
     border-radius: 5px;
     font-size: x-large;
+<<<<<<< HEAD
     color: #eee;
     transition: .5s;
 }
 .arrows button:hover{
     background-color: #eee;
     color: black;
+=======
+    transition: .5s;
+}
+.arrows button:hover{
+    background-color: #ffde59;
+    color: black;
+    transition-delay: 0.20s;
+>>>>>>> d773f0183c61d1c43c7f7d4211bd8a9a1350b471
 }
 .thumbnail{
     position: absolute;
@@ -322,7 +356,11 @@ header .menu{
     border-radius: 10px;
 }
 .thumbnail .item.active{
+<<<<<<< HEAD
     filter: brightness(1.5);
+=======
+    filter: brightness(1.1);
+>>>>>>> d773f0183c61d1c43c7f7d4211bd8a9a1350b471
 }
 .thumbnail .item .content{
     position: absolute;
