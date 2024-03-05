@@ -143,13 +143,14 @@
 	/*Fin de Menù lateral*/
 	.container-info {
 		background-color: white;
-		margin-top: 130vh;
+		margin-top: 100vh;
+		height: 60vh;
 	}
 
 	.container-info h3 {
 		padding: 1%;
 		font-family: 'poppins';
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 35px;
 		text-align: center;
 	}
