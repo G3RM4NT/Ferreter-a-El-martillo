@@ -189,6 +189,7 @@
     }
     /* css slider */
     .slider{
+        font-family: 'poppins';
         height: 100vh;
         margin-top: -50px;
         position: relative;
@@ -230,6 +231,10 @@
     }
     .slider .list .item .content h2{
         font-size: 100px;
+        margin: 0;
+    }
+    .slider .list .item .content h3{
+        font-size: 50px;
         margin: 0;
     }
     .slider .list .item.active{
