@@ -25,7 +25,11 @@ prev.onclick = function(){
 // auto run slider
 let refreshInterval = setInterval(() => {
     next.click();
+<<<<<<< HEAD
 }, 5000)
+=======
+}, 8000)
+>>>>>>> d773f0183c61d1c43c7f7d4211bd8a9a1350b471
 function showSlider(){
     // remove item active old
     let itemActiveOld = document.querySelector('.slider .list .item.active');
