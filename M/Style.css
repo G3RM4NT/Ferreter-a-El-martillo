@@ -140,6 +140,13 @@
 		cursor: pointer;
 		font-size: 25px;
 	}
+<<<<<<< HEAD
+	/*Fin de Menù lateral*/ 
+	.sau{
+		padding:50px 0;
+		background: #52575D;
+	}
+=======
 	/*Fin de Menù lateral*/
 
 
@@ -152,3 +159,4 @@
 		justify-content: center;
 	}
 	
+>>>>>>> master
