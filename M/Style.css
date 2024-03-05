@@ -141,15 +141,17 @@
 		font-size: 25px;
 	}
 	/*Fin de Menù lateral*/
-	.container-info {
-		background-color: white;
-		margin-top: 130vh;
+
+
+	#carouselExampleCaptions {
+		width: 60%;
+		display: flex;
+		right: 500px;
+		left: 400px;
+		align-items: center;
+		justify-content: center;
+		top: 200px;
+		
 	}
 
-	.container-info h3 {
-		padding: 1%;
-		font-family: 'poppins';
-		font-weight: 500;
-		font-size: 25px;
-		text-align: center;
-	}
+	
