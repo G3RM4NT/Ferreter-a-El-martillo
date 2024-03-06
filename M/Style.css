@@ -140,46 +140,30 @@
 		cursor: pointer;
 		font-size: 25px;
 	}
-<<<<<<< HEAD
 	/*Fin de Menù lateral*/ 
 	.sau{
 		padding:50px 0;
 		background: #52575D;
 	}
-=======
-	/*Fin de Menù lateral*/
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> CarlosBuendia
 
-
-	#carouselExampleCaptions {
-		width: 60%;
-		display: flex;
-		right: 500px;
-		left: 400px;
-		align-items: center;
-		justify-content: center;
-		top: 200px;
-		
+	.container-info {
+		background-color: white;
+		margin-top: 100vh;
+		height: 60vh;
 	}
 
-	
-<<<<<<< HEAD
-=======
-=======
-
+	.container-info h3 {
+		padding: 1%;
+		font-family: 'poppins';
+		font-weight: 500;
+		font-size: 35px;
+		text-align: center;
+	}
 
 	#carouselExampleCaptions{
-
-		width: 100%;
-		padding: 400px;
+		width: auto;
+		margin-top: 10%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
-	
->>>>>>> master
->>>>>>> master
->>>>>>> CarlosBuendia
