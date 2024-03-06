@@ -140,40 +140,17 @@
 		cursor: pointer;
 		font-size: 25px;
 	}
-<<<<<<< HEAD
-	/*Fin de Menù lateral*/ 
+	
 	.sau{
 		padding:50px 0;
 		background: #52575D;
 	}
-=======
-	/*Fin de Menù lateral*/
-<<<<<<< HEAD
-
-
-	#carouselExampleCaptions {
-		width: 60%;
-		display: flex;
-		right: 500px;
-		left: 400px;
-		align-items: center;
-		justify-content: center;
-		top: 200px;
-		
-	}
-
-	
-=======
-
 
 	#carouselExampleCaptions{
-
-		width: 100%;
-		padding: 400px;
+		width: auto;
+		margin-top: 10%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 	
->>>>>>> master
->>>>>>> master
