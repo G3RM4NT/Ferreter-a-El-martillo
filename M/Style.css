@@ -140,7 +140,15 @@
 		cursor: pointer;
 		font-size: 25px;
 	}
+<<<<<<< HEAD
+	/*Fin de Menù lateral*/ 
+	.sau{
+		padding:50px 0;
+		background: #52575D;
+	}
+=======
 	/*Fin de Menù lateral*/
+<<<<<<< HEAD
 <<<<<<< HEAD
 	.container-info {
 		background-color: white;
@@ -156,13 +164,41 @@
 		text-align: center;
 	}
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> CarlosBuendia
+
+
+	#carouselExampleCaptions {
+		width: 60%;
+		display: flex;
+		right: 500px;
+		left: 400px;
+		align-items: center;
+		justify-content: center;
+		top: 200px;
+		
+	}
+
+	
+<<<<<<< HEAD
+=======
+>>>>>>> master
+=======
 
 
 	#carouselExampleCaptions{
 
-		width: 10px;
-		position: middle;
-		padding: 300px;
+		width: 100%;
+		padding: 400px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	
+>>>>>>> master
+<<<<<<< HEAD
+=======
+>>>>>>> master
+>>>>>>> CarlosBuendia
 >>>>>>> master
