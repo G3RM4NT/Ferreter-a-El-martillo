@@ -475,6 +475,7 @@ footer{
     margin-top: 10px;
     color: #f7e686;
     font-weight: 600;
+	border-radius: 1px;
 }
 
 .box__footer a:hover{
@@ -483,6 +484,8 @@ footer{
 
 .box__footer a .fab{
     font-size: 20px;
+	padding-right: 10px;
+
 }
 
 .box__copyright{
