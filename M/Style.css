@@ -140,10 +140,28 @@
 		cursor: pointer;
 		font-size: 25px;
 	}
-	/*Fin de Menù lateral*/
+	/*Fin de Menù lateral*/ 
+	.sau{
+		padding:50px 0;
+		background: #52575D;
+	}
 
+	.container-info {
+		background-color: white;
+		margin-top: 100vh;
+		height: 60vh;
+	}
+
+	.container-info h3 {
+		padding: 1%;
+		font-family: 'poppins';
+		font-weight: 500;
+		font-size: 35px;
+		text-align: center;
+	}
 
 	#carouselExampleCaptions{
+<<<<<<< HEAD
 
 		width: 100%;
 		padding: 400px;
@@ -152,3 +170,11 @@
 		justify-content: center;
 	}
 	
+=======
+		width: auto;
+		margin-top: 10%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+>>>>>>> master
