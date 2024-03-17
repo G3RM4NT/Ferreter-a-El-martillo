@@ -152,9 +152,11 @@
 
 	#carouselExampleCaptions{
 
-		width: 10px;
-		position: middle;
-		padding: 300px;
+		width: 100%;
+		padding: 400px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 	
 >>>>>>> master
