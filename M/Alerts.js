@@ -2,8 +2,8 @@
 var selectedItem = document.getElementById("selector").value;
 var defaultItem = document.getElementById("default").value;
 
-var txtName = document.getElementById("nombre").value;
-var txtMail = document.getElementById("email").value;
+var txtName = document.getElementById("nombre");
+var txtMail = document.getElementById("email");
 
   /*LIMPIAR CAMPOS*/ 
   function Limpiar() {
@@ -11,25 +11,34 @@ var txtMail = document.getElementById("email").value;
     document.getElementById("email").value = "";
   }
   
-  function alertReservas(){
-    if(txtName == "" || txtMail == "")
-    {
-      Swal.fire({
-        title: "¡Atención!",
-        text: "Ingrese los datos solicitados para completar el proceso",
-        icon: "warning",
-        iconColor: "danger"
+  function Exito()
+  {
+    Swal.fire({
+        title: "Éxito",
+        text: "Se registró satisfactoriamente",
+        icon: "success",
+        iconColor: "#ffde59"
       });
-    }
-    else {
-      Swal.fire({
-          title: "Éxito",
-          text: "Se registró satisfactoriamente",
-          icon: "success",
-          iconColor: "#ffde59"
-        });
-        Limpiar();
-    }
+      Limpiar();
+  }
 
+  function Error()
+  {
+    Swal.fire({
+      title: "¡Atención!",
+      text: "Ingrese los datos solicitados para completar el proceso",
+      icon: "warning",
+      iconColor: "danger"
+    });
+    return;
+  }
+  function alertReservas(){
+ if(txtName.value == "" || txtMail.value == "")
+ {
+  Error();
+ }
+ else{
+  Exito();
+ }
   };
 
