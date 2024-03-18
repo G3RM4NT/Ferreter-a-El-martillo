@@ -5,6 +5,7 @@ var defaultItem = document.getElementById("default").value;
 var txtName = document.getElementById("nombre");
 var txtMail = document.getElementById("email");
 
+var selectedItem = document.getElementById("selector").value;
   /*LIMPIAR CAMPOS*/ 
   function Limpiar() {
     document.getElementById("nombre").value = "";
@@ -32,6 +33,8 @@ var txtMail = document.getElementById("email");
     });
     return;
   }
+
+
   function alertReservas(){
  if(txtName.value == "" || txtMail.value == "")
  {
@@ -40,5 +43,7 @@ var txtMail = document.getElementById("email");
  else{
   Exito();
  }
+ 
+ alert(selectedItem);
   };
 
