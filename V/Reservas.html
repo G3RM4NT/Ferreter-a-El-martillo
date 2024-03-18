@@ -51,8 +51,8 @@
 			  </div>
 			</div>
 			<div class="row mb-3">
-				<select class="form-select text-center" aria-label="Default select example">
-					<option selected>Seleccione un producto</option>
+				<select class="form-select text-center" id="selector" onchange="">
+					<option selected id="default">Seleccione un producto</option>
 					<option value="1">Casco de Seguridad</option>
 					<option value="2">Grifo monomando para lavabo</option>
 					<option value="3">Brocas para madera (juegos de 6)</option>
@@ -61,10 +61,10 @@
 					<option value="6">Cinta métrica de 5 metros</option>
 					<option value="7">Destornillador Phillips</option>					
 					<option value="8">Pintura blanca látex</option>
-					<option value="9">Guantes de trabajo de cuero</option>ramire
+					<option value="9">Guantes de trabajo de cuero</option>
 				  </select>
 			</div>
-			<button class="btn btn-warning" onclick="alertReservas()">Reservar</button>
+			<button type="button" class="btn btn-warning" onclick="alertReservas()">Reservar</button>
 		  </form>
 	</div>
 </div>
@@ -72,7 +72,7 @@
 	<div class="container__footer">
 		<div class="box__footer">
 			<div class="logo">
-				<img src="./IMG/FerreteriaLogo.png" alt="">
+				<img src="./IMG/FerreteriaLogo.png">
 			</div>
 			<div class="terms">
 				<p>La Ferretería El Martillo es el lugar ideal para los amantes de la construcción y el mantenimiento del hogar. Con una amplia variedad de herramientas, materiales y productos para proyectos de cualquier tamaño.</p>
@@ -100,15 +100,7 @@
 	</div>
 </footer>
 <script src="https://kit.fontawesome.com/8e4c78233d.js" crossorigin="anonymous"></script>
-<script src="sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../M/Alerts.js"></script>
 </body>
-<script>
-	function alertReservas(){
-    Swal.fire({
-        title: "Éxito",
-        text: "Se registró satisfactoriamente",
-        icon: "success"
-      });
-}
-</script>
 </html>
