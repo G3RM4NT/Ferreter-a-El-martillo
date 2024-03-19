@@ -1,17 +1,15 @@
 /*ALERTA DE RESERVA*/
-var selectedItem = document.getElementById("selector").value;
-var defaultItem = document.getElementById("default").value;
-
 var txtName = document.getElementById("nombre");
 var txtMail = document.getElementById("email");
 
-var selectedItem = document.getElementById("selector").value;
   /*LIMPIAR CAMPOS*/ 
   function Limpiar() {
     document.getElementById("nombre").value = "";
     document.getElementById("email").value = "";
   }
-  
+
+  var resul;
+
   function Exito()
   {
     Swal.fire({
@@ -23,7 +21,7 @@ var selectedItem = document.getElementById("selector").value;
       Limpiar();
   }
 
-  function Error()
+  function CamposVacios()
   {
     Swal.fire({
       title: "¡Atención!",
@@ -34,16 +32,26 @@ var selectedItem = document.getElementById("selector").value;
     return;
   }
 
+  //function SeleccionarItem(option) {resul = option.value;} -> TERMINAR DE PROGRAMAR
 
   function alertReservas(){
  if(txtName.value == "" || txtMail.value == "")
  {
-  Error();
+  CamposVacios();
  }
+//  else if(resul == 0) -> TERMINAR DE PROGRAMAR
+//  {
+//   Swal.fire({
+//     title: "¡Atención!",
+//     text: "Seleccione un producto para completar el proceso",
+//     icon: "warning",
+//     iconColor: "danger"
+//   });
+//  }
  else{
   Exito();
  }
  
- alert(selectedItem);
+ 
   };
 
