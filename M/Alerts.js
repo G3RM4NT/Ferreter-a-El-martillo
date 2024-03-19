@@ -16,7 +16,10 @@ var txtMail = document.getElementById("email");
         title: "Éxito",
         text: "Se registró satisfactoriamente",
         icon: "success",
-        iconColor: "#ffde59"
+        iconColor: "#ffde59",
+        confirmButtonColor: "#000000",
+        color: "#000",
+        focusConfirm: false,
       });
       Limpiar();
   }
@@ -27,7 +30,10 @@ var txtMail = document.getElementById("email");
       title: "¡Atención!",
       text: "Ingrese los datos solicitados para completar el proceso",
       icon: "warning",
-      iconColor: "danger"
+      iconColor: "danger",
+      confirmButtonColor: "#000000",
+      color: "#000",
+      focusConfirm: false,
     });
     return;
   }
@@ -45,7 +51,8 @@ var txtMail = document.getElementById("email");
 //     title: "¡Atención!",
 //     text: "Seleccione un producto para completar el proceso",
 //     icon: "warning",
-//     iconColor: "danger"
+//     iconColor: "danger",
+//     confirmButtonColor: "#000000"
 //   });
 //  }
  else{
