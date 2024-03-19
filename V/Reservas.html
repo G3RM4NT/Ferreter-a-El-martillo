@@ -8,9 +8,12 @@
 	<link href="../M/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <style>
-	/*Para quitar la sombra de los botones de las alertas*/
+	/*Para quitar la sombra, colores de bordes, entre otros. De los botones de las alertas*/
 	.swal2-styled {
   box-shadow: none !important;
+}
+*:focus {
+	box-shadow: none !important;
 }
 </style>
 <body>
@@ -57,7 +60,7 @@
 			  </div>
 			</div>
 			<div class="row mb-3">
-				<select class="form-select text-center" id="selector" onchange="SeleccionarItem(this)">
+				<select class="form-select text-center" id="selector" onchange="SeleccionarItem(this)" style="border-color: #ffde59;">
 					<option selected disabled >Seleccione un producto</option>
 					<option value="1">Casco de Seguridad</option>
 					<option value="2">Grifo monomando para lavabo</option>

@@ -6,8 +6,11 @@ var txtMail = document.getElementById("email");
   function Limpiar() {
     document.getElementById("nombre").value = "";
     document.getElementById("email").value = "";
+    var selector = document.getElementById("selector");
+    selector.selectedIndex = 0;
   }
-
+  
+  /*FUNCIONES*/
   var resul;
 
   function Exito()
@@ -38,27 +41,23 @@ var txtMail = document.getElementById("email");
     return;
   }
 
-  //function SeleccionarItem(option) {resul = option.value;} -> TERMINAR DE PROGRAMAR
+  function SeleccionarItem(option) {resul = option.value;}
 
-  function alertReservas(){
- if(txtName.value == "" || txtMail.value == "")
- {
-  CamposVacios();
- }
-//  else if(resul == 0) -> TERMINAR DE PROGRAMAR
-//  {
-//   Swal.fire({
-//     title: "¡Atención!",
-//     text: "Seleccione un producto para completar el proceso",
-//     icon: "warning",
-//     iconColor: "danger",
-//     confirmButtonColor: "#000000"
-//   });
-//  }
- else{
-  Exito();
- }
- 
- 
-  };
+function alertReservas() {
+  if (txtName.value == "" || txtMail.value == "") {
+    CamposVacios();
+  }
+  else if (resul == undefined) {
+    Swal.fire({
+      title: "¡Atención!",
+      text: "Seleccione un producto para completar el proceso",
+      icon: "warning",
+      iconColor: "danger",
+      confirmButtonColor: "#000000"
+    });
+  }
+  else {
+    Exito();
+  }
+};
 
