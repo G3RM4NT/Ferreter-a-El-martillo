@@ -2,11 +2,20 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Ferretería "El Martillazo" - Reservas</title>
-	<link rel="stylesheet" href="../M/Style.css" type="text/css">
+	<title>Ferretería "El Martillo" - Reservas</title>
+	<link rel="stylesheet" href="../M/StyleReservas.css" type="text/css">
 	<link rel="shortcut icon" href="../V/IMG/FerreteriaLogo.png" type="image/x-icon">
-	<link href="../M/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">}
+	<link href="../M/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<style>
+	/*Para quitar la sombra, colores de bordes, entre otros. De los botones de las alertas*/
+	.swal2-styled {
+  box-shadow: none !important;
+}
+*:focus {
+	box-shadow: none !important;
+}
+</style>
 <body>
 	<header class="header">
 		<div class="container">
@@ -14,7 +23,7 @@
 			<label for="btn-menu"><img src="IMG/icons8-menú.svg" width="80px"></label>
 		</div>
 			<div class="logo">
-				<h1>Ferretería Martillazo</h1>
+				<h1>Ferretería El Martillo</h1>
 			</div>
 		</div>
 	</header>
@@ -35,7 +44,7 @@
 </div>
 <div class="container-info text-center"> 
 	<hr style="background-color: #ffde59; border-color: #000000;" size="10px" width="100%">
-	<h3>Complete el formulario para reservar una herramienta</h3>
+	<h3>Complete el formulario</h3>
 	<div class="container">
 		<form>
 			<div class="row mb-3">
@@ -51,8 +60,8 @@
 			  </div>
 			</div>
 			<div class="row mb-3">
-				<select class="form-select text-center" aria-label="Default select example">
-					<option selected>Seleccione un producto</option>
+				<select class="form-select text-center" id="selector" onchange="SeleccionarItem(this)" style="border-color: #ffde59;">
+					<option selected disabled >Seleccione un producto</option>
 					<option value="1">Casco de Seguridad</option>
 					<option value="2">Grifo monomando para lavabo</option>
 					<option value="3">Brocas para madera (juegos de 6)</option>
@@ -64,10 +73,44 @@
 					<option value="9">Guantes de trabajo de cuero</option>
 				  </select>
 			</div>
-			<button type="submit" class="btn btn-warning">Reservar</button>
+			<button type="button" class="btn btn-warning" onclick="alertReservas()">Reservar</button>
 		  </form>
 	</div>
 </div>
-<!-- <script src="../M/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script> -->
+
+<footer>
+	<div class="container__footer">
+		<div class="box__footer">
+			<div class="logo">
+				<img src="./IMG/FerreteriaLogo.png">
+			</div>
+			<div class="terms">
+				<p>La Ferretería El Martillo es el lugar ideal para los amantes de la construcción y el mantenimiento del hogar. Con una amplia variedad de herramientas, materiales y productos para proyectos de cualquier tamaño.</p>
+			</div>
+		</div>    
+		<div class="box__footer">
+			<h2>Compañia</h2>
+			<a href="Index.html">Inicio</a>
+			<a href="Menu.html">Menú</a>             
+			<a href="About-us.html">Sobre Nosotros</a>
+			<a href="#">Reserva de Herramientas</a>             
+		</div>
+		<div class="box__footer">
+			<h2>Redes Sociales</h2>
+			<a href="#"><i class="fab fa-facebook-f"></i>Facebook   </a>
+			<a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+			<a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a>
+			<a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+		</div>
+	</div>
+
+	<div class="box__copyright">
+		<hr>
+		<p>Todos los derechos reservados © 2024 <a href="Index.html" style="text-decoration: none; color: #ffde59;"><b>El Martillo</b></a></p>
+	</div>
+</footer>
+<script src="https://kit.fontawesome.com/8e4c78233d.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../M/Alerts.js"></script>
 </body>
 </html>
