@@ -2,6 +2,7 @@
 var txtName = document.getElementById("nombre");
 var txtMail = document.getElementById("email");
 var txtPhone = document.getElementById("phone");
+let product = document.getElementById("form-select");
 
   /*LIMPIAR CAMPOS*/ 
   function Limpiar() {
@@ -73,6 +74,31 @@ var txtPhone = document.getElementById("phone");
   }
 
   function SeleccionarItem(option) {resul = option.value;}
+
+  function GuardarReservas(){
+    const cardsReservas = `<div class="carD">
+    <div class="face face1">
+        <div class="content">
+            <i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
+            <h3></h3>
+        </div>
+    </div>
+    <div class="face face2 ">
+        <div class="info-reserva">
+            <ul class="pt-4 text-left">
+                <li><b>Nombre:</b>${txtName}</li>
+                <li><b>Correo:</b>${txtMail}</li>
+                <li><b>Teléfono:</b>${txtPhone}</li>
+                <li><b>Producto:</b>${product}</li>
+            </ul>
+        </div>
+        <button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
+    </div>
+</div>`;
+
+    let newCardReserva ;
+    alert(txtName,txtMail,txtPhone);
+}
 
 function alertReservas() {
   if (txtName.value == "" || txtMail.value == "" || txtPhone.value == "") {
