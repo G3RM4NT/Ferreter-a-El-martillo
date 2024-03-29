@@ -1,11 +1,13 @@
 /*ALERTA DE RESERVA*/
 var txtName = document.getElementById("nombre");
 var txtMail = document.getElementById("email");
+var txtPhone = document.getElementById("phone");
 
   /*LIMPIAR CAMPOS*/ 
   function Limpiar() {
     document.getElementById("nombre").value = "";
     document.getElementById("email").value = "";
+    document.getElementById("phone").value = "";
     var selector = document.getElementById("selector");
     selector.selectedIndex = 0;
   }
@@ -73,7 +75,7 @@ var txtMail = document.getElementById("email");
   function SeleccionarItem(option) {resul = option.value;}
 
 function alertReservas() {
-  if (txtName.value == "" || txtMail.value == "") {
+  if (txtName.value == "" || txtMail.value == "" || txtPhone.value == "") {
     CamposVacios();
   }
   else if (resul == undefined) {

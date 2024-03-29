@@ -47,7 +47,7 @@
 	<hr style="background-color: #ffde59; border-color: #000000;" size="10px" width="100%">
 	<h3>Complete el formulario</h3>
 	<div class="container mt-5">
-		<form>
+		<form id="form-r">
 			<div class="row mb-3">
 			  <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
 			  <div class="col-sm-10">
@@ -61,17 +61,23 @@
 			  </div>
 			</div>
 			<div class="row mb-3">
+				<label for="phone" class="col-sm-2 col-form-label">Teléfono:</label>
+				<div class="col-sm-10">
+				  <input type="text" class="form-control" id="phone" style="border-color: #ffde59;">
+				</div>
+			  </div>
+			<div class="row mb-3">
 				<select class="form-select text-center" id="selector" onchange="SeleccionarItem(this)" style="border-color: #ffde59;">
 					<option selected disabled >Seleccione un producto</option>
-					<option value="1">Casco de Seguridad</option>
-					<option value="2">Grifo monomando para lavabo</option>
-					<option value="3">Brocas para madera (juegos de 6)</option>
-					<option value="4">Martillo de carpintero</option>
-					<option value="5">Tornillos de acero galvanizado (paquete de 50)</option>
-					<option value="6">Cinta métrica de 5 metros</option>
-					<option value="7">Destornillador Phillips</option>					
-					<option value="8">Pintura blanca látex</option>
-					<option value="9">Guantes de trabajo de cuero</option>
+					<option>Casco de Seguridad</option>
+					<option>Grifo monomando para lavabo</option>
+					<option>Brocas para madera (juegos de 6)</option>
+					<option>Martillo de carpintero</option>
+					<option>Tornillos de acero galvanizado (paquete de 50)</option>
+					<option>Cinta métrica de 5 metros</option>
+					<option>Destornillador Phillips</option>					
+					<option>Pintura blanca látex</option>
+					<option>Guantes de trabajo de cuero</option>
 				  </select>
 			</div>
 			<button type="button" class="btn btn-warning" onclick="alertReservas()">Reservar</button>
@@ -83,145 +89,6 @@
 	<hr style="background-color: #ffde59; border-color: #000000; margin-top: 0;" size="10px" width="100%">
 	<h3 class="text-center">Reservas pendientes</h3>
 	<div class="cards">
-		<div class="carD">
-			<div class="face face1">
-				<div class="content">
-					<i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
-					<h3>#1</h3>
-				</div>
-			</div>
-			<div class="face face2 ">
-				<div class="info-reserva">
-					<ul class="pt-4 text-left">
-						<li><b>Nombre:</b></li>
-						<li><b>Correo:</b></li>
-						<li><b>Teléfono:</b></li>
-						<li><b>Producto:</b></li>
-					</ul>
-				</div>
-				<button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
-			</div>
-		</div>
-	
-		<div class="carD">
-			<div class="face face1">
-				<div class="content">
-					<i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
-					<h3>#2</h3>
-				</div>
-			</div>
-			<div class="face face2 ">
-				<div class="info-reserva">
-					<ul class="pt-4 text-left">
-						<li><b>Nombre:</b></li>
-						<li><b>Correo:</b></li>
-						<li><b>Teléfono:</b></li>
-						<li><b>Producto:</b></li>
-					</ul>
-				</div>
-				<button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
-			</div>
-		</div>
-	
-		<div class="carD">
-			<div class="face face1">
-				<div class="content">
-					<i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
-					<h3>#3</h3>
-				</div>
-			</div>
-			<div class="face face2 ">
-				<div class="info-reserva">
-					<ul class="pt-4 text-left">
-						<li><b>Nombre:</b></li>
-						<li><b>Correo:</b></li>
-						<li><b>Teléfono:</b></li>
-						<li><b>Producto:</b></li>
-					</ul>
-				</div>
-				<button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
-			</div>
-		</div>
-	
-		<div class="carD">
-			<div class="face face1">
-				<div class="content">
-					<i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
-					<h3>#4</h3>
-				</div>
-			</div>
-			<div class="face face2 ">
-				<div class="info-reserva">
-					<ul class="pt-4 text-left">
-						<li><b>Nombre:</b></li>
-						<li><b>Correo:</b></li>
-						<li><b>Teléfono:</b></li>
-						<li><b>Producto:</b></li>
-					</ul>
-				</div>
-				<button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
-			</div>
-		</div>
-	
-		<div class="carD">
-			<div class="face face1">
-				<div class="content">
-					<i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
-					<h3>#5</h3>
-				</div>
-			</div>
-			<div class="face face2 ">
-				<div class="info-reserva">
-					<ul class="pt-4 text-left">
-						<li><b>Nombre:</b></li>
-						<li><b>Correo:</b></li>
-						<li><b>Teléfono:</b></li>
-						<li><b>Producto:</b></li>
-					</ul>
-				</div>
-				<button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
-			</div>
-		</div>
-	
-		<div class="carD">
-			<div class="face face1">
-				<div class="content">
-					<i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
-					<h3>#6</h3>
-				</div>
-			</div>
-			<div class="face face2 ">
-				<div class="info-reserva">
-					<ul class="pt-4 text-left">
-						<li><b>Nombre:</b></li>
-						<li><b>Correo:</b></li>
-						<li><b>Teléfono:</b></li>
-						<li><b>Producto:</b></li>
-					</ul>
-				</div>
-				<button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
-			</div>
-		</div>
-	
-		<div class="carD">
-			<div class="face face1">
-				<div class="content">
-					<i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
-					<h3>#7</h3>
-				</div>
-			</div>
-			<div class="face face2 ">
-				<div class="info-reserva">
-					<ul class="pt-4 text-left">
-						<li><b>Nombre:</b></li>
-						<li><b>Correo:</b></li>
-						<li><b>Teléfono:</b></li>
-						<li><b>Producto:</b></li>
-					</ul>
-				</div>
-				<button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
-			</div>
-		</div>
 	</div>
 </div>
 
@@ -259,5 +126,6 @@
 <script src="https://kit.fontawesome.com/8e4c78233d.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="../M/Alerts.js"></script>
+<script src="../M/ReservasFunctions.js"></script>
 </body>
 </html>
