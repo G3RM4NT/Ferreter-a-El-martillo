@@ -19,7 +19,7 @@
 	.capa h1{
 		font-family: 'Montserrat Alternates', sans-serif;
 		font-weight: bold;
-		font-size: 4em;
+		font-size: 3.5em;
 		text-transform: uppercase;
 		text-align: center;
 		transform: translateY(45vh);
@@ -173,7 +173,7 @@
 
 	footer{
 		width: 100%;
-		padding: 50px 0px;
+		padding: 40px 0px;
 		background-size: cover;   
 		background-color: #1f1f1f;
 		font-family: 'Poppins';
@@ -208,7 +208,7 @@
 	
 	.box__footer h2{
 		margin-bottom: 30px;
-		color: #dddcdc;
+		color: #ffffff;
 		font-weight: 700;
 	}
 	
@@ -217,10 +217,13 @@
 		color: #f7e686;
 		font-weight: 600;
 		border-radius: 1px;
+		text-decoration: none;
+		transition-delay: 0.1s;
+		transition-duration: 0.2s;
 	}
 	
 	.box__footer a:hover{
-		opacity: 0.8;
+		opacity: 0.7;
 	}
 	
 	.box__footer a .fab{
@@ -244,6 +247,12 @@
 	.box__copyright p b{
 	 font-family: "Satisfy", cursive;
 	 font-size: larger;
+	 transition-delay: 0.1s;
+	 transition-duration: 0.2s;
+	}
+
+	.box__copyright p b:hover{
+		opacity: 0.7;
 	}
 	
 	.box__copyright hr{
