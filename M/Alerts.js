@@ -41,6 +41,35 @@ var txtMail = document.getElementById("email");
     return;
   }
 
+  function ReservaEntregada()
+  {
+    Swal.fire({
+      title: "¿Desea marcar como entregada?",
+      text: "Asegúrate que se haya completado la reserva",
+      icon: "question",
+      iconColor: "#ffde59",
+      showCancelButton: true,
+      confirmButtonColor: "#1f1f1f",
+      cancelButtonColor: "#ffde59",
+      cancelButtonText: "No",
+      confirmButtonText: "Si"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Éxito",
+        text: 'Se marcó como "Reserva entregada"',
+        icon: "success",
+        iconColor: "#ffde59",
+        confirmButtonColor: "#000000",
+        color: "#000",
+        focusConfirm: false,
+        });
+
+        /*Insertar en la tabla de ventas 0R IDK, IT MIGHT BE*/
+      }
+    });
+  }
+
   function SeleccionarItem(option) {resul = option.value;}
 
 function alertReservas() {
