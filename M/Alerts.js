@@ -16,6 +16,7 @@ var product = document.getElementById("form-select");
   /*FUNCIONES*/
   var resul;
   var numDeItem = 0;
+  var idDelItem = 0;
   function Exito()
   {
     Swal.fire({
@@ -43,52 +44,26 @@ var product = document.getElementById("form-select");
     return;
   }
 
-  function ReservaEntregada()
-  {
-    Swal.fire({
-      title: "¿Desea marcar como entregada?",
-      text: "Asegúrate que se haya completado la reserva",
-      icon: "question",
-      iconColor: "#ffde59",
-      showCancelButton: true,
-      confirmButtonColor: "#1f1f1f",
-      cancelButtonColor: "#ffde59",
-      cancelButtonText: "No",
-      confirmButtonText: "Si"
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire({
-          title: "Éxito",
-        text: 'Se marcó como "Reserva entregada"',
-        icon: "success",
-        iconColor: "#ffde59",
-        confirmButtonColor: "#000000",
-        color: "#000",
-        focusConfirm: false,
-        });
-
-        /*Insertar en la tabla de ventas 0R IDK, IT MIGHT BE*/
-      }
-    });
+  function OcultarApartadoReservas(){
+    document.querySelector("div.con").setAttribute("hidden","");
   }
 
-
-   window.onload = function OcultarApartadoReservas(){
-     document.querySelector("div.con").setAttribute("hidden","");
-   }
+   window.onload = OcultarApartadoReservas();
 
 function SeleccionarItem(option) {resul = option.value;}
 
 function GuardarReservas(){
   document.querySelector("div.con").removeAttribute("hidden");
 
+  var idReserva;
+  
   let CardsContainer = document.getElementById("cards");
-  CardsContainer.innerHTML += `<div class="carD">
+  CardsContainer.innerHTML += `<div class="carD" id="${idReserva = ++idDelItem}">
   <div class="face face1">
       <div class="content">
           <i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
           <h3>${++numDeItem}</h3>
-          <button class="btn btn-warning p-1" onclick="ReservaEntregada()">Entregado</button>
+          <button class="btn btn-warning p-1" onclick="ReservaEntregada(${idReserva})">Entregado</button>
       </div>
   </div>
   <div class="face face2">
@@ -102,6 +77,52 @@ function GuardarReservas(){
       </div>
   </div>
   </div>`;
+  }
+
+  function ComprobarExistenciaReservas()
+  {
+    let containerCards =  document.getElementById('cards');
+    if(containerCards.hasChildNodes())
+    {
+      return
+    }
+    else
+    {
+      OcultarApartadoReservas();
+    }
+  }
+
+  function ReservaEntregada(idReserva)
+  {
+    Swal.fire({
+      title: "¿Desea marcar como entregada?",
+      text: "Asegúrate que se haya completado la reserva",
+      icon: "question",
+      iconColor: "#ffde59",
+      showCancelButton: true,
+      confirmButtonColor: "#1f1f1f",
+      cancelButtonColor: "#ffde59",
+      cancelButtonText: "No",
+      confirmButtonText: "Si"
+    }).then((result) => {
+      if (result.isConfirmed) {
+
+        const Cards = document.getElementById("cards");
+        const card = document.getElementById(idReserva);
+        Cards.removeChild(card);
+
+        ComprobarExistenciaReservas();
+        Swal.fire({
+          title: "Éxito",
+        text: 'Se marcó como "Reserva entregada"',
+        icon: "success",
+        iconColor: "#ffde59",
+        confirmButtonColor: "#000000",
+        color: "#000",
+        focusConfirm: false,
+        });
+      }
+    });
   }
 
 function alertReservas() {
