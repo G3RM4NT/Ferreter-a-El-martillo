@@ -162,6 +162,7 @@
 
 	#carouselExampleCaptions{
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 		width: 100%;
 		padding: 400px;
@@ -171,10 +172,16 @@
 	}
 	
 =======
+=======
+>>>>>>> master
 		width: auto;
 		margin-top: 10%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+<<<<<<< HEAD
+	}
+>>>>>>> master
+=======
 	}
 >>>>>>> master
