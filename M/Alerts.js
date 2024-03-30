@@ -15,7 +15,7 @@ var product = document.getElementById("form-select");
   
   /*FUNCIONES*/
   var resul;
-
+  var numDeItem = 0;
   function Exito()
   {
     Swal.fire({
@@ -87,7 +87,7 @@ function GuardarReservas(){
   <div class="face face1">
       <div class="content">
           <i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
-          <h3></h3>
+          <h3>${++numDeItem}</h3>
           <button class="btn btn-warning p-1" onclick="ReservaEntregada()">Entregado</button>
       </div>
   </div>
