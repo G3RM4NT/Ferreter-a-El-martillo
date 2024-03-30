@@ -239,7 +239,7 @@ form {
 }
 
 .con .carD .face.face1 .content {
-	opacity: 0.2;
+	opacity: 0.25;
 	transition: 0.5s;
 	text-align: center;
 }
@@ -260,6 +260,17 @@ form {
 	text-align: center;
 }
 
+.con .carD .face.face1 .content button{
+	font-family: 'Poppins';
+	background-color: #ffde59a8;
+	border-color: #ffde59a8;
+}
+
+.con .carD .face.face1 .content button:hover {
+	background-color: #ffde59d7;
+	border-color: #ffde59d7;
+}
+
 .con .carD .face.face2 {
 	position: relative;
 	background: rgb(255, 255, 255);
@@ -273,10 +284,6 @@ form {
 
 .con .carD:hover .face.face2 {
 	transform: translateY(0);
-}
-
-.con .carD .face.face2 button {
-	font-size: 14px;
 }
 
 /*Fin - tarjeta de reservas*/

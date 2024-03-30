@@ -72,36 +72,37 @@ var product = document.getElementById("form-select");
     });
   }
 
-  function SeleccionarItem(option) {resul = option.value;}
 
-  function GuardarReservas(){
-document.querySelector("div.con").removeAttribute("hidden");
+   window.onload = function OcultarApartadoReservas(){
+     document.querySelector("div.con").setAttribute("hidden","");
+   }
 
-let CardsContainer = document.getElementById("cards");
-CardsContainer.innerHTML += `<div class="carD">
-<div class="face face1">
-    <div class="content">
-        <i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
-        <h3></h3>
-    </div>
-</div>
-<div class="face face2">
-    <div class="info-reserva">
-        <ul class="pt-4 text-left">
-            <li><b>Nombre:</b> ${txtName.value}</li>
-            <li><b>Correo:</b> ${txtMail.value}</li>
-            <li><b>Teléfono:</b> ${txtPhone.value}</li>
-            <li><b>Producto:</b></li>
-        </ul>
-    </div>
-    <button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
-</div>
-</div>`;
-}
+function SeleccionarItem(option) {resul = option.value;}
 
-window.onload = function OcultarApartadoReservas(){
-  document.querySelector("div.con").setAttribute("hidden","");
-}
+function GuardarReservas(){
+  document.querySelector("div.con").removeAttribute("hidden");
+
+  let CardsContainer = document.getElementById("cards");
+  CardsContainer.innerHTML += `<div class="carD">
+  <div class="face face1">
+      <div class="content">
+          <i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
+          <h3></h3>
+          <button class="btn btn-warning p-1" onclick="ReservaEntregada()">Entregado</button>
+      </div>
+  </div>
+  <div class="face face2">
+      <div class="info-reserva">
+          <ul class="pt-4 text-left">
+              <li><b>Nombre:</b> ${txtName.value}</li>
+              <li><b>Correo:</b> ${txtMail.value}</li>
+              <li><b>Teléfono:</b> ${txtPhone.value}</li>
+              <li><b>Producto:</b> ${resul}</li>
+          </ul>
+      </div>
+  </div>
+  </div>`;
+  }
 
 function alertReservas() {
   if (txtName.value == "" || txtMail.value == "" || txtPhone.value == "") {
