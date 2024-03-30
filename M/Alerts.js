@@ -2,7 +2,7 @@
 var txtName = document.getElementById("nombre");
 var txtMail = document.getElementById("email");
 var txtPhone = document.getElementById("phone");
-let product = document.getElementById("form-select");
+var product = document.getElementById("form-select");
 
   /*LIMPIAR CAMPOS*/ 
   function Limpiar() {
@@ -27,7 +27,6 @@ let product = document.getElementById("form-select");
         color: "#000",
         focusConfirm: false,
       });
-      Limpiar();
   }
 
   function CamposVacios()
@@ -76,28 +75,32 @@ let product = document.getElementById("form-select");
   function SeleccionarItem(option) {resul = option.value;}
 
   function GuardarReservas(){
-    const cardsReservas = `<div class="carD">
-    <div class="face face1">
-        <div class="content">
-            <i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
-            <h3></h3>
-        </div>
+document.querySelector("div.con").removeAttribute("hidden");
+
+let CardsContainer = document.getElementById("cards");
+CardsContainer.innerHTML += `<div class="carD">
+<div class="face face1">
+    <div class="content">
+        <i class="fa-regular fa-clock fa-spin" style="font-size: 2em; color: #ffffff;"></i>
+        <h3></h3>
     </div>
-    <div class="face face2 ">
-        <div class="info-reserva">
-            <ul class="pt-4 text-left">
-                <li><b>Nombre:</b></li>
-                <li><b>Correo:</b></li>
-                <li><b>Teléfono:</b></li>
-                <li><b>Producto:</b></li>
-            </ul>
-        </div>
-        <button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
+</div>
+<div class="face face2">
+    <div class="info-reserva">
+        <ul class="pt-4 text-left">
+            <li><b>Nombre:</b> ${txtName.value}</li>
+            <li><b>Correo:</b> ${txtMail.value}</li>
+            <li><b>Teléfono:</b> ${txtPhone.value}</li>
+            <li><b>Producto:</b></li>
+        </ul>
     </div>
+    <button class="btn btn-warning" onclick="ReservaEntregada()">Entregado</button>
+</div>
 </div>`;
-const cardsContainer = document.getElementById('cards');
-const card = GenerarCards();
-cardsContainer.innerHTML = card;
+}
+
+window.onload = function OcultarApartadoReservas(){
+  document.querySelector("div.con").setAttribute("hidden","");
 }
 
 function alertReservas() {
@@ -116,6 +119,7 @@ function alertReservas() {
   else {
     Exito();
     GuardarReservas();
+    Limpiar();
   }
 };
 

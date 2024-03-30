@@ -187,7 +187,7 @@ form {
 	background-color: white;
 	position: relative;
 }
-.con .cards{
+.con #cards{
 	justify-content: center;
 	width: 100%;
 	padding-bottom: 4vh;
@@ -268,10 +268,15 @@ form {
 	border-radius: 7px;
 	text-align: center;
 	font-family: 'Poppins';
+	font-size: 14px;
 }
 
 .con .carD:hover .face.face2 {
 	transform: translateY(0);
+}
+
+.con .carD .face.face2 button {
+	font-size: 14px;
 }
 
 /*Fin - tarjeta de reservas*/
