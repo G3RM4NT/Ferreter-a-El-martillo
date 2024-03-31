@@ -143,4 +143,9 @@ function alertReservas() {
     GuardarReservas();
     Limpiar();
   }
+<<<<<<< HEAD
 };
+=======
+};
+
+>>>>>>> master
