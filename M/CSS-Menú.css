@@ -25,10 +25,10 @@ body {
 .header {
 	width: 100%;
 	height: 100px;
+	position: fixed;
 	top: 0;
 	left: 0;
-	position: fixed;
-        background: linear-gradient(to top, rgba(77, 74, 74, 0), rgba(0, 0, 0, 0.594));
+	background-color: #1f1f1f;
 }
 
 .container {
@@ -475,7 +475,6 @@ footer{
     margin-top: 10px;
     color: #f7e686;
     font-weight: 600;
-	border-radius: 1px;
 }
 
 .box__footer a:hover{
@@ -484,8 +483,6 @@ footer{
 
 .box__footer a .fab{
     font-size: 20px;
-	padding-right: 10px;
-
 }
 
 .box__copyright{
@@ -605,3 +602,4 @@ footer{
 		flex-direction: column;
 	}
 }
+
