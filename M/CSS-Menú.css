@@ -118,10 +118,13 @@ body {
 	color: #c7c7c7;
 	border-left: 5px solid transparent;
 	transition: all 400ms ease;
+	font-family: 'Poppins';
+	transition-delay: 0.1s;
 }
 .container-menu nav a:hover{
 	border-left: 5px solid #ffde59;
 	background: #1f1f1f;
+	text-shadow: 0px 0px 10px, 0 0 2px #ffffff, 0 0 0.4px #ffffff, 0 0 0.4px #ffffff;
 }
 .container-menu label{
 	position: absolute;
@@ -439,79 +442,94 @@ td {
 	padding: 10px;
 }
 
-footer{
-    width: 100%;
-    padding: 50px 0px;
-    background-size: cover;   
+footer {
+	width: 100%;
+	padding: 40px 0px;
+	background-size: cover;
 	background-color: #1f1f1f;
+	font-family: 'Poppins';
 }
 
-.container__footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: auto;
-    margin-top: 100px;
+.container__footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 100px;
 }
 
-.box__footer{
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
+.box__footer {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
 }
 
-.box__footer .logo img{
-    width: 180px;
+.box__footer .logo img {
+	width: 180px;
 }
 
-.box__footer .terms{
-    max-width: 350px;
-    margin-top: 20px;
-    font-weight: 500;
-    color: #fcf7f7;
-    font-size: 18px;
+.box__footer .terms {
+	max-width: 350px;
+	margin-top: 20px;
+	font-weight: 500;
+	color: #fcf7f7;
+	font-size: 18px;
 }
 
-.box__footer h2{
-    margin-bottom: 30px;
-    color: #dddcdc;
-    font-weight: 700;
+.box__footer h2 {
+	margin-bottom: 30px;
+	color: #ffffff;
+	font-weight: 700;
 }
 
-.box__footer a{
-    margin-top: 10px;
-    color: #f7e686;
-    font-weight: 600;
+.box__footer a {
+	margin-top: 10px;
+	color: #f7e686;
+	font-weight: 600;
 	border-radius: 1px;
+	text-decoration: none;
+	transition-delay: 0.1s;
+	transition-duration: 0.2s;
 }
 
-.box__footer a:hover{
-    opacity: 0.8;
+.box__footer a:hover {
+	opacity: 0.7;
 }
 
-.box__footer a .fab{
-    font-size: 20px;
+.box__footer a .fab {
+	font-size: 20px;
 	padding-right: 10px;
 
 }
 
-.box__copyright{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 40px;
+.box__copyright {
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+	padding: 0px 40px;
 }
 
-.box__copyright p{
-    margin-top: 20px;
-    color: #ffffff;
+.box__copyright p {
+	margin-top: 20px;
+	color: #ffffff;
 }
 
-.box__copyright hr{
-    border: none;
-    height: 3px;
-    background-color: #fafa17;
+.box__copyright p b {
+	font-family: "Satisfy", cursive;
+	font-size: larger;
+	transition-delay: 0.1s;
+	transition-duration: 0.2s;
+}
+
+.box__copyright p b:hover {
+	opacity: 0.7;
+}
+
+.box__copyright hr {
+	border: none;
+	height: 3px;
+	background-color: #fafa17;
 }
 
 @media (max-width:800px ){
