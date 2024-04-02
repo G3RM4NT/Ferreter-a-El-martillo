@@ -27,6 +27,7 @@ function leerDatosElemento(elemento) {
         id: elemento.querySelector('.agregar-carrito').getAttribute('data-id')
     };
     insertarCarrito(infoElemento);
+    Exito();
 }
 
 function insertarCarrito(elemento) {
@@ -63,4 +64,17 @@ function vaciarCarrito() {
     while (listaCarrito.firstChild) {
         listaCarrito.removeChild(listaCarrito.firstChild);
     }
+}
+
+function Exito()
+{
+  Swal.fire({
+      title: "Éxito",
+      text: "Se registró satisfactoriamente",
+      icon: "success",
+      iconColor: "#ffde59",
+      confirmButtonColor: "#000000",
+      color: "#000",
+      focusConfirm: false,
+    });
 }
