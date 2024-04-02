@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -49,13 +55,15 @@ body {
 }
 
 .logo h1 {
-	color: #fff;
-	font-size: 26px;
-	padding-right: 30px;
-	padding-top: 30px;
-	font-family: "Merriweather", serif;
-	text-shadow: 0 0px 10px, 0 0 2px #ffffff, 0 0 0.2px #d5ceda, 0 0 0.2px #ffffff,
-		0 8px 3px #333;
+	font-weight: 800;
+	font-size: 34px;
+	font-family: "Satisfy", cursive;
+	color: #f7e686;
+	float: right;
+	line-height: 100px;
+	letter-spacing: 0.2cap;
+	text-shadow: 0 0px 8px, 0 0 1px #ffffff8c, 0 0 0.1px #d5ceda, 0 0 0.1px #ffffff8c,
+		0 10px 3px #333;
 }
 .logo{
 	display: flex;
@@ -442,7 +450,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     margin-top: 100px;
 }
