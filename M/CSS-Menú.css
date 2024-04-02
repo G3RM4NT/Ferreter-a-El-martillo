@@ -17,6 +17,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
+	font-family: 'Poppins';
 }
 
 body {
@@ -249,7 +250,6 @@ td {
 	text-transform: uppercase;
 	line-height: 1;
 	color: gold;
-	font-family: 'Oswald', sans-serif;
 	margin-bottom: 15px;
 	padding-bottom: 10px;
 	text-shadow: 0 0px 10px, 0 0 2px #ffffff, 0 0 0.2px #d5ceda, 0 0 0.2px #ffffff,
@@ -261,7 +261,6 @@ td {
 	margin-bottom: 20px;
 	padding-top: 10px;
 	color: white;
-	font-family: 'Oswald', sans-serif;
 	text-shadow: 0 0px 10px, 0 0 2px #ffffff, 0 0 0.2px #d5ceda, 0 0 0.2px #ffffff,
 		0 8px 3px #333;
 }
@@ -272,7 +271,6 @@ td {
 	background-color: white;
 	color: #111111;
 	border-radius: 5px;
-	font-family: Arial, Helvetica, sans-serif;
 	margin-top: 25px;
 }
 
@@ -304,7 +302,6 @@ td {
 
 .ofert-txt h3{
 	color: #111111;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 25px;
 	text-transform: uppercase;
 	margin-bottom: 15px;
@@ -339,11 +336,10 @@ td {
 
 .products-container h2{
 	color: #111111;
-	font-family: 'Oswald' sans-serif;
-	font-size: 50px;
-	text-transform: uppercase;
+	font-family: "Satisfy", cursive;
+	font-size: 90px;
 	margin-bottom: 50px;
-	text-shadow: 0 0px 10px, 0 0 2px #ffffff, 0 0 0.2px #d5ceda, 0 0 0.2px #ffffff,
+	text-shadow: 0 0px 9px, 0 0 2px #ffffff, 0 0 0.2px #d5ceda, 0 0 0.2px #ffffff,
 		0 3px 3px #333;
 }
 
@@ -432,18 +428,16 @@ td {
 }
 
 .blog-1 h3{
-	font-size: 23px;
+	font-size: 60px;
 	color:#000000;
 	text-shadow: 0 0px 10px, 0 0 2px #ffffff, 0 0 0.2px #d5ceda, 0 0 0.2px #ffffff,
 		0 2px 3px #333;
-	font-family: 'Oswald', sans-serif;
-	text-transform: uppercase;
+		font-family: "Satisfy", cursive;
 	margin-bottom: 15px;
 }
 .blog-1 p{
 	font-size: 20px;
 	color: black;	
-	font-family: 'Oswald', sans-serif;
 	padding: 3px;
 }
 
