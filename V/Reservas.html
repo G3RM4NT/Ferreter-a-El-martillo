@@ -19,33 +19,33 @@
 <body>
 	<header class="header">
 		<div class="container">
-		<div class="btn-menu">
-			<label for="btn-menu"><img src="IMG/icons8-menú.svg" width="80px"></label>
-		</div>
+			<div class="btn-menu">
+				<label for="btn-menu"><i class="fa-solid fa-bars"></i></label>
+			</div>
+			<input type="checkbox" id="btn-menu">
+			<div class="container-menu">
+				<div class="cont-menu">
+					<nav>
+						<a href="Index.html">Inicio</a>
+						<a href="Menu.html">Menu</a>
+						<a href="About-us.html">Sobre Nosotros</a>
+						<a href="Reservas.html">Reserva de Herramientas</a>
+					</nav>
+					<label for="btn-menu">✕</label>
+				</div>
+			</div>
 			<div class="logo">
-				<h1>Ferretería El Martillo</h1>
+				<h1>El Martillo</h1>
 			</div>
 		</div>
 	</header>
-	<div class="capa">
-		<h1>Reserva de Herramientas</h1>
-	</div>
-<input type="checkbox" id="btn-menu">
-<div class="container-menu">
-	<div class="cont-menu">
-		<nav>
-			<a href="Index.html">Inicio</a>
-			<a href="Menu.html">Menu</a>
-			<a href="About-us.html">Sobre Nosotros</a>
-			<a href="Reservas.html">Reserva de Herramientas</a>
-		</nav>
-		<label for="btn-menu">✕</label>
-	</div>
-</div>
+	<div class="capa"><h1>Reserva de Herramientas</h1></div>
+
+
 <div class="container-info text-center"> 
-	<hr style="background-color: #ffde59; border-color: #000000;" size="10px" width="100%">
+	<hr style="background-color: #ffde59; border-color: #000000; opacity: inherit;" size="10px" width="100%">
 	<h3>Complete el formulario</h3>
-	<div class="container">
+	<div class="container mt-5">
 		<form>
 			<div class="row mb-3">
 			  <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
@@ -60,22 +60,34 @@
 			  </div>
 			</div>
 			<div class="row mb-3">
+				<label for="phone" class="col-sm-2 col-form-label">Teléfono:</label>
+				<div class="col-sm-10">
+				  <input type="text" class="form-control" id="phone" style="border-color: #ffde59;">
+				</div>
+			  </div>
+			<div class="row mb-3">
 				<select class="form-select text-center" id="selector" onchange="SeleccionarItem(this)" style="border-color: #ffde59;">
 					<option selected disabled >Seleccione un producto</option>
-					<option value="1">Casco de Seguridad</option>
-					<option value="2">Grifo monomando para lavabo</option>
-					<option value="3">Brocas para madera (juegos de 6)</option>
-					<option value="4">Martillo de carpintero</option>
-					<option value="5">Tornillos de acero galvanizado (paquete de 50)</option>
-					<option value="6">Cinta métrica de 5 metros</option>
-					<option value="7">Destornillador Phillips</option>					
-					<option value="8">Pintura blanca látex</option>
-					<option value="9">Guantes de trabajo de cuero</option>
+					<option>Casco de Seguridad</option>
+					<option>Grifo monomando para lavabo</option>
+					<option>Brocas para madera (juegos de 6)</option>
+					<option>Martillo de carpintero</option>
+					<option>Tornillos de acero galvanizado (paquete de 50)</option>
+					<option>Cinta métrica de 5 metros</option>
+					<option>Destornillador Phillips</option>					
+					<option>Pintura blanca látex</option>
+					<option>Guantes de trabajo de cuero</option>
 				  </select>
 			</div>
-			<button type="button" class="btn btn-warning" onclick="alertReservas()">Reservar</button>
+			<button type="button" id="btnReservar" class="btn btn-warning" onclick="alertReservas()">Reservar</button>
 		  </form>
 	</div>
+</div>
+
+<div class="con">
+	<hr style="background-color: #ffde59; border-color: #000000; margin-top: 0; opacity: inherit" size="10px" width="100%">
+	<h3 class="text-center">Reservas pendientes</h3>
+	<div id="cards"></div>
 </div>
 
 <footer>
